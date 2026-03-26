@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Angolo di Mel — Pizzeria Artigianale</title>
+  <meta name="description" content="L'Angolo di Mel — vera pizza napoletana, impasto a lunga lievitazione, forno a legna. Vieni a trovarci!">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════
+     NAVBAR
+════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">L'Angolo di Mel</a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#galleria">Galleria</a></li>
+    <li><a href="#dove-siamo">Dove Siamo</a></li>
+    <li><a href="#contatti" class="nav-cta">Contatti</a></li>
+  </ul>
+
+  <button class="burger" id="burger" aria-label="Apri menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#galleria">Galleria</a>
+  <a href="#dove-siamo">Dove Siamo</a>
+  <a href="#contatti">Contatti</a>
+</div>
+
+
+<!-- ════════════════════════════
+     HERO
+════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg" id="heroBg"></div>
+
+  <div class="hero-stars" aria-hidden="true">
+    <div class="star">✦</div>
+    <div class="star">✦</div>
+    <div class="star">✦</div>
+    <div class="star">✦</div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Primo pizzaiolo d'Italia &nbsp;·&nbsp; IN CLASSIFICA</p>
+    <h1 class="hero-title">
+      L'ANGOLO<br>
+      <span>DI MEL</span>
+    </h1>
+    <p class="hero-sub">Pizza al taglio, a qualunque ora</p>
+    <div class="hero-btns">
+      <a href="#galleria"  class="btn">Scopri il Menu</a>
+      <a href="#contatti"  class="btn btn-red">Chiamaci Ora</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     MARQUEE
+════════════════════════════ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">🍕 Impasto a Lunga Lievitazione <span class="dot">★</span></span>
+    <span class="marquee-item">Forno a Legna <span class="dot">★</span></span>
+    <span class="marquee-item">Ingredienti DOP <span class="dot">★</span></span>
+    <span class="marquee-item">Napoli nel Piatto <span class="dot">★</span></span>
+    <span class="marquee-item">Aperto Tutti i Giorni <span class="dot">★</span></span>
+    <!-- duplicato per loop infinito -->
+    <span class="marquee-item">🍕 Impasto a Lunga Lievitazione <span class="dot">★</span></span>
+    <span class="marquee-item">Forno a Legna <span class="dot">★</span></span>
+    <span class="marquee-item">Ingredienti DOP <span class="dot">★</span></span>
+    <span class="marquee-item">Pizza al taglio <span class="dot">★</span></span>
+    <span class="marquee-item">Aperto a qualunque ora <span class="dot">★</span></span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════
+     ABOUT
+════════════════════════════ -->
+<section class="about-section">
+  <div class="about-img reveal-left">
+    <img
+      src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=900&q=80"
+      alt="Pizza al taglio appena sfornata"
+      loading="lazy"
+    >
+  </div>
+  <div class="about-text reveal-right">
+    <p class="section-tag">La nostra storia</p>
+    <h2 class="about-heading">
+      PIZZA<br>A <span class="accent">QUALUNQUE<br>ORA.</span>
+    </h2>
+    <p class="about-body">
+     Pizzeria Valdostana nel centro di Courmayer, pizza al taglio e non, pazzaiolo classificato migliore d'italia
+    </p>
+    <a href="#galleria" class="btn btn-red" style="align-self:flex-start">Vedi il Menu</a>
+    <div class="about-deco" aria-hidden="true">🍕</div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     MENU
+════════════════════════════ -->
+<section class="menu-section">
+  <div class="section-header reveal">
+    <span class="label">Le nostre specialità</span>
+    <h2>LE PIZZE<br>DI MEL</h2>
+  </div>
+
+  <div class="pizza-grid">
+    <div class="pizza-card reveal">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza Margherita" loading="lazy">
+      <div class="pizza-card-overlay">
+        <div class="pizza-name">Margherita</div>
+        <div class="pizza-desc">Pomodoro San Marzano, fior di latte, basilico fresco, olio EVO</div>
+        <div class="pizza-price">€9</div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal">
+      <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=600&q=80" alt="Pizza Diavola" loading="lazy">
+      <div class="pizza-card-overlay">
+        <div class="pizza-name">Diavola</div>
+        <div class="pizza-desc">Pomodoro, fiordilatte, salame piccante, olio al peperoncino</div>
+        <div class="pizza-price">€12</div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal">
+      <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&q=80" alt="Pizza Quattro Stagioni" loading="lazy">
+      <div class="pizza-card-overlay">
+        <div class="pizza-name">Quattro Stagioni</div>
+        <div class="pizza-desc">Pomodoro, mozzarella, funghi, carciofi, prosciutto, olive</div>
+        <div class="pizza-price">€13</div>
+      </div>
+    </div>
+
+    <div class="pizza-card reveal">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" alt="Pizza Speciale Mel" loading="lazy">
+      <div class="pizza-card-overlay">
+        <div class="pizza-name">La Speciale di Mel</div>
+        <div class="pizza-desc">Crema di burrata, nduja calabrese, pomodorini confit, basilico</div>
+        <div class="pizza-price">€15</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     GALLERIA
+════════════════════════════ -->
+<section id="galleria">
+  <div class="gallery-header reveal">
+    <h2>CHE<br>BUONE!</h2>
+    <p>La nostra galleria — scorri e lasciati ispirare 🍕</p>
+  </div>
+
+  <div class="gallery-strip">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&q=80" alt="Pizza nel forno" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" alt="Margherita" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&q=80" alt="Diavola" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Impasto a mano" loading="lazy">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=500&q=80" alt="Forno a legna" loading="lazy">
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     DOVE SIAMO
+════════════════════════════ -->
+<section id="dove-siamo">
+  <div class="map-placeholder">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.9599692986835!2d6.971434400000001!3d45.7920297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789476c0de8505d%3A0x678c4f190a5e18e7!2sL&#39;angolo%20di%20Mel!5e0!3m2!1sit!2sit!4v1774522263536!5m2!1sit!2sit"
+     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title = "Angolodimel">
+
+    </iframe>
+  </div>
+
+  <div class="location-info reveal-right">
+    <p class="section-tag">Trovaci qui</p>
+    <h2>DOVE<br><em>SIAMO</em></h2>
+    <div class="divider-line"></div>
+
+    <div class="info-block">
+      <p class="info-label">Indirizzo</p>
+      <p>Via Croux 2<br>Courmayer (AO), 11013</p>
+    </div>
+
+    <div class="info-block">
+      <p class="info-label">Orari</p>
+      <p>
+        Dom-Giov: 10:00–22:30
+        <strong style="color:var(--white)"><br>Ven-Sab: 24h</strong>
+        
+      </p>
+    </div>
+
+    <div class="info-block">
+      <p class="info-label">Telefono</p>
+      <p><a href="tel:+390111234567">+39 388 901 4289</a></p>
+    </div>
+
+    <a href="#contatti" class="btn btn-red" style="margin-top:1.5rem;display:inline-block">
+      Chiamaci Ora
+    </a>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     CONTATTI
+════════════════════════════ -->
+<section id="contatti">
+  <div class="contatti-inner">
+
+    <!-- heading -->
+    <span class="sec-eyebrow">Siamo qui per te</span>
+    <h2>CONTATTI<span class="accent">!</span></h2>
+    <p class="sub">Chiama, scrivi, o lasciaci una recensione — ci fa sempre piacere sentirsi.</p>
+
+    <!-- cards: telefono + social -->
+    <div class="contact-cards">
+
+      <!-- telefono -->
+      <a href="tel:+390111234567" class="contact-card reveal">
+        <div class="card-icon">📞</div>
+        <div class="card-label">Telefono</div>
+        <div class="card-value">+39 388 <br>901 4289</div>
+        <div class="card-sub">Dom-Giov: 10:00–22:30<br>Ven-Sab: 24h</div>
+        <div class="card-action">Chiama ora →</div>
+      </a>
+
+      <!-- whatsapp -->
+      <a href="https://wa.me/393889014289" target="_blank" rel="noopener" class="contact-card reveal">
+        <div class="card-icon">💬</div>
+        <div class="card-label">WhatsApp</div>
+        <div class="card-value">Scrivici su<br>WhatsApp</div>
+        <div class="card-sub">Prenotazioni, info menu,<br>eventi privati</div>
+        <div class="card-action">Apri chat →</div>
+      </a>
+
+      <!-- instagram -->
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-card reveal">
+        <div class="card-icon">📸</div>
+        <div class="card-label">Instagram</div>
+        <div class="card-value">@angolo_di_mel</div>
+        <div class="card-sub">Foto, storie e novità<br>dal forno ogni giorno</div>
+        <div class="card-action">Seguici →</div>
+      </a>
+
+      <!-- facebook 
+      <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-card reveal">
+        <div class="card-icon">👍</div>
+        <div class="card-label">Facebook</div>
+        <div class="card-value">L'Angolo<br>di Mel</div>
+        <div class="card-sub">Aggiornamenti, eventi<br>e offerte speciali</div>
+        <div class="card-action">Metti mi piace →</div>
+      </a>
+      -->
+    </div>
+
+    <!-- recensioni -->
+    <h3 class="review-section-title reveal">
+      LASCIA UNA <span style="color:var(--red)">RECENSIONE</span>
+    </h3>
+    <p class="review-sub reveal">La tua opinione vale oro — e ci aiuta a crescere 🍕</p>
+
+    <div class="review-btns reveal">
+      <a href="https://share.google/SgP2s5sZwCI9A1mo8" target="_blank" rel="noopener" class="review-btn google">
+        <span>⭐</span> Recensisci su Google
+      </a>
+      <a href="https://www.tripadvisor.ie/Restaurant_Review-g187865-d15024586-Reviews-L_angolo_di_Mel-Courmayeur_Valle_d_Aosta.html" target="_blank" rel="noopener" class="review-btn tripadvisor">
+        <span>🦉</span> TripAdvisor
+      </a>
+          <!-- recensioni 
+
+      <a href="https://facebook.com" target="_blank" rel="noopener" class="review-btn facebook">
+        <span>👍</span> Facebook
+      </a>
+      -->
+    </div>
+
+    <div class="stars-deco reveal" aria-hidden="true">★ ★ ★ ★ ★</div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <div class="foot-logo">L'Angolo di Mel</div>
+  <ul class="foot-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#galleria">Galleria</a></li>
+    <li><a href="#dove-siamo">Dove Siamo</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+  <p class="foot-copy">© L'Angolo di Mel 1987—2026</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
